@@ -1,7 +1,9 @@
-import React from 'react'
-import {Canvas} from '@react-three/fiber'
-import {PerspectiveCamera} from '@react-three/drei'
-import HackerRoom from '../components/HackerRoom'
+import React, { Suspense } from 'react'
+import { Canvas } from '@react-three/fiber'
+import { PerspectiveCamera } from '@react-three/drei'
+import HackerRoom from '../components/HackerRoom.jsx'
+import CanvasLoader from '../components/CanvasLoader.jsx'
+import { DirectionalLightNode } from 'three/webgpu'
 
 const Hero = () => {
   return (
@@ -17,8 +19,12 @@ const Hero = () => {
 
         <div className='w-full h-full absolute inset-0'>
             <Canvas className='w-full h-full'>
+                <Suspense fallback={<CanvasLoader/>}>
                 <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
-                <HackerRoom/>
+                <HackerRoom scale={0.07} position={[0, 0, 0]} rotation={[0, 280, 0]}/>
+                <ambientLight intensity={1}/>
+                <directionalLight position={[10, 10, 10]} intensity={0.5}/>
+                </Suspense>
             </Canvas>
         </div>
     </section>
