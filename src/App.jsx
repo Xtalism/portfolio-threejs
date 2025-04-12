@@ -1,13 +1,17 @@
 import React from 'react'
 import Navbar from "./sections/Navbar.jsx"
 import Hero from "./sections/Hero.jsx"
-import HackerRoom from './components/HackerRoom.jsx'
+// import HackerRoom from './components/HackerRoom.jsx'
+import About from "./sections/About.jsx"
+import Projects from "./sections/Projects.jsx"
 
 const App = () => {
   return (
     <main className="max-w-7xl mx-auto">
       <Navbar/>
       <Hero/>
+      <About/>
+      <Projects/>
     </main>
   )
 }
