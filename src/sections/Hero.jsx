@@ -5,6 +5,7 @@ import HackerRoom from '../components/HackerRoom.jsx';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '../constants/index.js';
+import Target from '../components/Target.jsx';
 
 const Hero = () => {
     const isSmall = useMediaQuery({maxWidth: 440});
@@ -39,7 +40,7 @@ const Hero = () => {
                     scale={sizes.deskScale}
                 />
                 <group>
-                    {/* <Target position={sizes.targetPosition}/> */}
+                    <Target position={sizes.targetPosition}/>
                 </group>
                 <ambientLight intensity={1}/>
                 <directionalLight position={[10, 10, 10]} intensity={0.5}/>
