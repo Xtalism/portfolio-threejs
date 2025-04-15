@@ -50,7 +50,7 @@ const Contact = () => {
                 <div className='contact-container'>
                     <h3 className='head-text '>Let's Talk</h3>
                     <p className='text-lg text-white-600 mt-3'>
-                        Lorem ipsum dolor.
+                        Let's keep in touch. Let me know if you have any questions or if you want to work together.
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}
                         className='mt-12 flex flex-col space-y-7'>

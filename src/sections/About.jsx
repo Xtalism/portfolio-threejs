@@ -1,9 +1,10 @@
 import Globe from "react-globe.gl";
 import Button from "../components/Button.jsx";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const About = () => {
-    const [hasCopied, setHasCopied] = useState(false)
+    const [hasCopied, setHasCopied] = useState(false);
+    const globeRef = useRef();
 
     const handleCopy = () => {
         navigator.clipboard.writeText('manuel.pina.olivas@gmail.com');
@@ -13,7 +14,22 @@ const About = () => {
         setTimeout(() => {
             setHasCopied(false);
         }, 2000);
-    }
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (globeRef.current) {
+                const currentRotation = globeRef.current.pointOfView();
+                globeRef.current.pointOfView({
+                    lat: currentRotation.lat,
+                    lng: currentRotation.lng + 1,
+                    altitude: currentRotation.altitude,
+                });
+            }
+        }, 50);
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <section className='c-space my-20' id="about">
@@ -49,13 +65,14 @@ const About = () => {
                         <div className="rounded-3xl w-full sm:h-[326px] h-fit flex 
                         justify-center items-center">
                             <Globe
+                                ref={globeRef}
                                 height={326}
                                 width={326}
                                 backgroundColor="rgba(0, 0, 0, 0)"
                                 backgroundImageOpacity={0.5}
                                 showAtmosphere
                                 showGraticules
-                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
+                                globeImageUrl="//cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg"
                                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                             />
                         </div>
@@ -67,7 +84,9 @@ const About = () => {
                                 Working with teams and clients worldwide, I am driven by a passion for technology
                                 and its ability to transform lives for the better.
                             </p>
-                            <Button name='Contact Me' isBeam containerClass='w-full mt-10' />
+                            <a href='#contact' className='w-fit'>
+                                <Button name='Contact Me' isBeam containerClass='w-full mt-10' />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +122,7 @@ const About = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default About;
