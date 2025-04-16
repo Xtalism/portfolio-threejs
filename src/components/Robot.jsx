@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
-const Developer = (props) => {
+const Robot = (props) => {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/kuma_heavy_robot_r-9000s.glb')
   const { actions } = useAnimations(animations, group)
@@ -76,4 +76,4 @@ const Developer = (props) => {
 
 useGLTF.preload('/models/kuma_heavy_robot_r-9000s.glb')
 
-export default Developer
+export default Robot
