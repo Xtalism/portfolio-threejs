@@ -5,6 +5,7 @@ import { Center, OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import DemoComputer from "../components/DemoComputer";
+import { Environment } from "@react-three/drei";
 
 const Projects = () => {
   const projectCount = myProjects.length;
@@ -98,18 +99,19 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
+        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full hover:cursor-grab">
           <Canvas>
-            <ambientLight intensity={Math.PI / 2} />
+            <ambientLight intensity={2.5 * Math.PI} />
             <directionalLight position={[10, 10, 5]} />
+            <Environment preset="park" />
             <Center>
               <Suspense fallback={<CanvasLoader />}>
-                <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
-                  <DemoComputer texture={currentProject.texture}/>
+                <group scale={2} position={[-0.35, -3, 0]} rotation={[0, 0, 0]}>
+                  <DemoComputer texture={currentProject.texture} />
                 </group>
               </Suspense>
             </Center>
-            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false}/>
+            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
           </Canvas>
         </div>
       </div>

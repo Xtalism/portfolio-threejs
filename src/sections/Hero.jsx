@@ -11,6 +11,7 @@ import { calculateSizes } from '../constants/index.js';
 // import Rings from '../components/Rings.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import Button from '../components/Button.jsx';
+import { Environment } from '@react-three/drei';
 
 const Hero = () => {
     const isSmall = useMediaQuery({maxWidth: 440});
@@ -35,7 +36,6 @@ const Hero = () => {
             <Canvas className='w-full h-full'>
                 <Suspense fallback={<CanvasLoader/>}>
                 <PerspectiveCamera makeDefault position={[0, 0, 23]}/>
-                
                 <HeroCamera>
                     <HackerRoom 
                         // scale={0.07} 
@@ -52,8 +52,9 @@ const Hero = () => {
                     {/* <Cube position={sizes.cubePosition}/> */}
                     {/* <Rings position={sizes.ringPosition}/> */}
                 </group>
-                <ambientLight intensity={1}/>
-                <directionalLight position={[10, 10, 10]} intensity={0.5}/>
+                {/* <ambientLight intensity={1.5}/> */}
+                {/* <directionalLight position={[10, 10, 10]} intensity={0.5}/> */}
+                <Environment preset="lobby" />
                 </Suspense>
             </Canvas>
             <div className='absolute bottom-7 left-0 right-0 w-full z-10 c-space'>
