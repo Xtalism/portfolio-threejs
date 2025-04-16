@@ -55,27 +55,29 @@ const About = () => {
                 </div>
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <Canvas>
-                            <Suspense fallback={<CanvasLoader />}>
-                                <directionalLight
-                                    position={[5, 5, 5]}
-                                    intensity={2.5}
-                                    castShadow
-                                    shadow-mapSize-width={2048}
-                                    shadow-mapSize-height={2048}
-                                    shadow-camera-far={15}
-                                    shadow-camera-left={-10}
-                                    shadow-camera-right={10}
-                                    shadow-camera-top={10}
-                                    shadow-camera-bottom={-10}
-                                />
-                                <OrbitControls enableZoom={false} maxPolarAngle={Math.PI}
-                                    minAzimuthAngle={-Math.PI / 3} maxAzimuthAngle={Math.PI / 3} enableRotate={false} />
-                                <Suspense fallback={<CanvasLoader />} />
-                                <Environment preset="park" />
-                                <TechStack position-y={0.1} scale={2.4} rotation={[Math.PI / 2, 0, 0]} />
-                            </Suspense>
-                        </Canvas>
+                        <div className="interactive-container">
+                            <Canvas>
+                                <Suspense fallback={<CanvasLoader />}>
+                                    <directionalLight
+                                        position={[5, 5, 5]}
+                                        intensity={2.5}
+                                        castShadow
+                                        shadow-mapSize-width={2048}
+                                        shadow-mapSize-height={2048}
+                                        shadow-camera-far={15}
+                                        shadow-camera-left={-10}
+                                        shadow-camera-right={10}
+                                        shadow-camera-top={10}
+                                        shadow-camera-bottom={-10}
+                                    />
+                                    <OrbitControls enableZoom={false} maxPolarAngle={Math.PI}
+                                        minAzimuthAngle={-Math.PI / 3} maxAzimuthAngle={Math.PI / 3} enableRotate={true} />
+                                    <Suspense fallback={<CanvasLoader />} />
+                                    <Environment preset="park" />
+                                    <TechStack position-y={0.1} scale={2.4} rotation={[Math.PI / 2, 0, 0]} />
+                                </Suspense>
+                            </Canvas>
+                        </div>
                         {/* <img src="/assets/grid2.png" alt="Grid 2"
                             className="w-full sm:h-[276px] h-fit object-contain" /> */}
                         <div>
@@ -90,7 +92,7 @@ const About = () => {
                 <div className="col-span-1 xl:row-span-4">
                     <div className="grid-container">
                         <div className="rounded-3xl w-full sm:h-[326px] h-fit flex 
-                        justify-center items-center grid-globe-container">
+                        justify-center items-center interactive-container">
                             <Globe
                                 ref={globeRef}
                                 height={326}
