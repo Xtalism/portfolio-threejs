@@ -147,8 +147,8 @@ const About = () => {
                                 />
                                 <Keyboard
                                     position-y={0}
-                                    scale={0.032}
-                                    rotation={[Math.PI / 5, 0, 0]}
+                                    scale={0.028}
+                                    rotation={[Math.PI / 8, 0, 0]}
                                 />
                             </Suspense>
                         </Canvas>
