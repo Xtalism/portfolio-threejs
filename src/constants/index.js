@@ -95,7 +95,7 @@ export const myProjects = [
     subdesc:
       "An autonomous mobile robot with mecanum wheels for omnidirectional movement and a manipulator arm. Built with ROS2, it features advanced control systems for seamless operation in dynamic environments, ideal for industrial and research tasks.",
     href: "https://youtu.be/Ag-K_ZEC1xM",
-    texture: "/textures/project/project4.mp4",
+    texture: "/textures/project/project2.mp4",
     logo: "/assets/project-logo4.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
