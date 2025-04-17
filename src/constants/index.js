@@ -136,43 +136,43 @@ export const myProjects = [
       },
     ],
   },
-  {
-    title: "Vimonsa - Industrial Website",
-    desc: "Vimonsa is a leading company in the field of industrial automation and control systems. I had the opportunity to work on their website, enhancing its design and functionality.",
-    subdesc:
-      "The website features a modern design, improved navigation, and optimized performance. It serves as a showcase for Vimonsa’s innovative solutions and services in the automation industry.",
-    href: "https://www.vimonsa.com.mx/",
-    texture: "/textures/project/project2.mp4",
-    logo: "/assets/vimonsa_project.svg",
-    logoStyle: {
-      backgroundColor: "#13202F",
-      border: "0.2px solid #17293E",
-      boxShadow: "0px 0px 60px 0px #2F6DB54D",
-    },
-    spotlight: "/assets/spotlight2.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "JavaScript",
-        path: "/assets/javascript.png",
-      },
-      {
-        id: 3,
-        name: "CSS",
-        path: "/assets/css.png",
-      },
-      {
-        id: 4,
-        name: "HTML",
-        path: "/assets/html.png",
-      },
-    ],
-  },
+  // {
+  //   title: "Vimonsa - Industrial Website",
+  //   desc: "Vimonsa is a leading company in the field of industrial automation and control systems. I had the opportunity to work on their website, enhancing its design and functionality.",
+  //   subdesc:
+  //     "The website features a modern design, improved navigation, and optimized performance. It serves as a showcase for Vimonsa’s innovative solutions and services in the automation industry.",
+  //   href: "https://www.vimonsa.com.mx/",
+  //   texture: "/textures/project/project2.mp4",
+  //   logo: "/assets/vimonsa_project.svg",
+  //   logoStyle: {
+  //     backgroundColor: "#13202F",
+  //     border: "0.2px solid #17293E",
+  //     boxShadow: "0px 0px 60px 0px #2F6DB54D",
+  //   },
+  //   spotlight: "/assets/spotlight2.png",
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: "React.js",
+  //       path: "/assets/react.svg",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "JavaScript",
+  //       path: "/assets/javascript.png",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "CSS",
+  //       path: "/assets/css.png",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "HTML",
+  //       path: "/assets/html.png",
+  //     },
+  //   ],
+  // },
   {
     title: "Springtime - Interactive Web App",
     desc: "Springtime is an interactive web application designed to enhance the user experience with a focus on performance and aesthetics. It features a modern flower design, smooth animations, and responsive layout.",
