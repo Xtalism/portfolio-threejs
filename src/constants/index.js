@@ -203,7 +203,7 @@ export const myProjects = [
     subdesc:
       "Built for scalability and performance, the system integrates seamlessly with industrial processes. Developed using TwinCAT 3, MSSQL, and KUKA robots, it offers advanced automation, data analytics, and reporting to empower informed decisions.",
     href: "https://github.com/Xtalism/TwinCAT-Traceability-MES",
-    texture: "/textures/project/project5.mp4",
+    texture: "/textures/project/project4.mp4",
     logo: "/assets/project-logo5.png",
     logoStyle: {
       backgroundColor: "#1C1A43",
