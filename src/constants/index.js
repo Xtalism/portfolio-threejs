@@ -94,9 +94,9 @@ export const myProjects = [
     desc: "Omnidirectional Manipulator is a robotics project that combines a mobile robot base with a 5-DOF manipulator arm, offering unparalleled versatility and precision.",
     subdesc:
       "An autonomous mobile robot with mecanum wheels for omnidirectional movement and a manipulator arm. Built with ROS2, it features advanced control systems for seamless operation in dynamic environments, ideal for industrial and research tasks.",
-    href: "https://youtu.be/Ag-K_ZEC1xM",
+    href: "https://www.youtube.com/playlist?list=PL3C8yCOARHROVQ0J0LYWpv6aPSOsDYQEf",
     texture: "/textures/project/project2.mp4",
-    logo: "/assets/project-logo4.png",
+    logo: "/assets/ros.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
@@ -204,7 +204,7 @@ export const myProjects = [
       "Built for scalability and performance, the system integrates seamlessly with industrial processes. Developed using TwinCAT 3, MSSQL, and KUKA robots, it offers advanced automation, data analytics, and reporting to empower informed decisions.",
     href: "https://github.com/Xtalism/TwinCAT-Traceability-MES",
     texture: "/textures/project/project4.mp4",
-    logo: "/assets/project-logo5.png",
+    logo: "/assets/mes.svg",
     logoStyle: {
       backgroundColor: "#1C1A43",
       border: "0.2px solid #252262",
