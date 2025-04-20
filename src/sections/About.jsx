@@ -42,7 +42,7 @@ const About = () => {
             <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
                 <div className='col-span-1 xl:row-span-3'>
                     <div className='grid-container'>
-                        <img src='/assets/programmer.png' alt='Grid 1'
+                        <img src='/assets/grid1.png' alt='Grid 1'
                             className='w-full sm:h-[276px] h-fit object-contain' />
                         <div>
                             <p className="grid-headtext">Hi, I'm Manuel</p>
