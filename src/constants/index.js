@@ -294,7 +294,7 @@ export const workExperiences = [
   },
   {
     id: 3,
-    name: "FEEN",
+    name: "FEEN Industrial",
     pos: "Technical Support",
     duration: "2019 - 2020",
     title:
