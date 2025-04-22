@@ -42,7 +42,7 @@ const Hero = () => {
                         // position={[0, 0, 0]} 
                         // rotation={[0, 280, 0]}
                         position={sizes.deskPosition} 
-                        rotation={[0.4, -Math.PI, 0.0]}
+                        rotation={[0, 0, 0.0]}
                         scale={sizes.deskScale}
                     />
                 </HeroCamera>
