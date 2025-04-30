@@ -4,6 +4,7 @@ import { workExperiences } from '../constants/index.js';
 import { OrbitControls } from '@react-three/drei';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 import Robot from '../components/Robot.jsx';
+import Button from '../components/Button.jsx';
 
 const Experience = () => {
     return (
@@ -52,6 +53,9 @@ const Experience = () => {
                                     </div>
                                 </div>
                             ))}
+                            <a href="files/cv.pdf" download>
+                                <Button name='Resume' isBeam containerClass='w-30 h-8 mt--10' />
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -303,3 +303,18 @@ export const workExperiences = [
     animation: "salute",
   },
 ];
+
+export const socialIcons = [
+  {
+    id: 1,
+    name: "Github"
+  },
+  {
+    id: 3,
+    name: "Instagram"
+  },
+  {
+    id: 4,
+    name: "Twitter"
+  }
+];
