@@ -54,7 +54,7 @@ const Experience = () => {
                                 </div>
                             ))}
                             <a href="files/cv.pdf" download>
-                                <Button name='Resume' isBeam containerClass='w-30 h-8 mt-8' />
+                                <Button name='Resume' isBeam containerClass='w-30 h-8 mt-7' />
                             </a>
                         </div>
                     </div>
