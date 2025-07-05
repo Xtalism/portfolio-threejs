@@ -274,33 +274,39 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
+    name: "CFE",
+    pos: "Intern",
+    duration: "2025 - Present",
+    title:
+      "Developed predictive models for task automation, leveraging machine learning techniques to improve operational efﬁciency. Designed and implemented deep learning solutions for complex data processing and analysis.",
+    icon: "/assets/cfe.svg",
+  },
+  {
+    id: 2,
     name: "Hagenteck Solution",
     pos: "IT Engineer",
     duration: "2024 - Present",
     title:
       "Developed traceability systems to enhance visibility and reduce errors. Specialized in process robotics, automation, IoT solutions, and PLC programming. Designed and deployed scalable servers and databases for robust full-stack solutions.",
     icon: "/assets/hagenteck.svg",
-    animation: "victory",
   },
   {
-    id: 2,
+    id: 3,
     name: "Vimonsa",
     pos: "Technical Support",
     duration: "2023 - 2024",
     title:
       "Skilled in TIA Portal programming, PLC panel management, Haas CNC maintenance, and 3D modeling with SolidWorks and Fusion 360.",
     icon: "/assets/vimonsa.svg",
-    animation: "clapping",
   },
   {
-    id: 3,
+    id: 4,
     name: "FEEN Industrial",
     pos: "Technical Support",
     duration: "2019 - 2020",
     title:
       "Proficient in operating Lathe and Milling Machines, and troubleshooting electrical and mechanical systems. Expertise in PLC panel management, industrial machine maintenance, and computer repair.",
     icon: "/assets/feen.svg",
-    animation: "salute",
   },
 ];
 
